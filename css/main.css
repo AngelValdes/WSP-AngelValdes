@@ -86,6 +86,7 @@ section {
 fieldset {
     border: 1px solid #AF5500;
     padding: 10px;
+    margin-top: 20px;
 }
 fieldset legend {
     font-weight: bold;
