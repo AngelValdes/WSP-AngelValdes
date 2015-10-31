@@ -1,10 +1,96 @@
 /* Project CSS 
 ============================================================
 ============================================================*/
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNicgaGVpZ2h0PSc2Jz4KICA8cmVjdCB3aWR0aD0nNicgaGVpZ2h0PSc2JyBmaWxsPScjZWVlZWVlJy8+CiAgPGcgaWQ9J2MnPgogICAgPHJlY3Qgd2lkdGg9JzMnIGhlaWdodD0nMycgZmlsbD0nI2U2ZTZlNicvPgogICAgPHJlY3QgeT0nMScgd2lkdGg9JzMnIGhlaWdodD0nMicgZmlsbD0nI2Q4ZDhkOCcvPgogIDwvZz4KICA8dXNlIHhsaW5rOmhyZWY9JyNjJyB4PSczJyB5PSczJy8+Cjwvc3ZnPg==");
+    background-repeat: repeat;
+    width: 960px;
+    font-family: Verdana, Geneva, sans-serif;
+}
 
+#wrapper {
+    min-height: 100%;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.3), 0 0 1.25em rgba(0, 0, 0, 0.5);
+}
+/*content section*/
+#content {
+    padding-bottom: 50px;
+}
+h2{ 
+    padding: 20px 0 10px;
+    color: #af5500;
+    font-weight: bold;
+    font-size: 20px;
+}
+h3 {
+    color: dimgrey;
+    font-weight: bold;
+    padding: 10px 0 0;
+}
+/*bottom footer*/
+footer {
+    padding-top: 5px;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #AF5500;
+    color: #fff;
+}
 
-/* HEADER ============================== */
-
-/* ABOUT ============================== */
-
+/* nav styles */
+nav {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #AF5500;
+    text-align: center;
+}
+    nav ul {
+        
+    }
+    nav li {
+        list-style-type: none;
+         display: inline-block;
+        padding-left: 20px;
+            font-weight: bold;
+            font-size: 22px;
+    }
+ol li { margin-left: 30px;}
+ol li:nth-child(odd) {
+  background-color:beige;
+}
+ol li:nth-child(even) {
+  color: darkblue;
+}
+.feature {
+    border: 10px solid #daa520;
+}
+a {
+        color: white;
+}
+a:hover {
+    color: #B0E0E6;
+}
+section {
+    padding: 0 40px;
+}
+#name {
+    font-weight: bold;
+}
+fieldset {
+    border: 1px solid #AF5500;
+    padding: 10px;
+}
+fieldset legend {
+    font-weight: bold;
+    font-size: 18px;
+}
 /* COMPONENTS ============================== */
+
+
