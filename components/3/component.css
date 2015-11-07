@@ -2,3 +2,77 @@
 ============================================================
 ============================================================*/
 
+body {
+	background: #daa520;
+	font-family: Helvetica, sans-serif; font-size: 18px; line-height: 20px;
+}
+
+@import url("http://fonts.googleapis.com/css?family=Lato");
+
+.main {
+    width: 50%; margin: 0 auto;
+}
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 20px 0 100px 10px; 
+}
+h1 span { 
+    font-size: 13px;
+    display: block;
+    padding-left: 4px;
+}
+.tabs {
+  width: 650px;  
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+}
+.tabs [id^="tab"]:checked + label { 
+    top: 0;
+    padding-top: 17px; 
+    background: #db7e11; 
+}
+    .tabs   [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
+.tabs .tab-content{
+    z-index: 2;
+    display: none; 
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;  
+    position: absolute;
+    top: 53px;
+    left: 0; 
+    background: #db7e11;
+  }
+.tabs li {
+    float: left;
+    display: block;
+  }
+.tabs input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+.tabs label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: #f5dea8;
+    cursor: pointer;
+    position: relative;
+    top: 4px; 
+  }
+.tabs label:hover {
+    background: #e8c572;
+}

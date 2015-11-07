@@ -93,5 +93,14 @@ fieldset legend {
     font-size: 18px;
 }
 /* COMPONENTS ============================== */
-
+.button {
+    margin-top: 20px;
+    background-color: #AF5500;
+    color: #fff;
+    font-family: Helvetica, sans-serif; font-size: 18px; line-height: 24px;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+    padding: 10px 20px;
+	border-radius: 10px;
+    width: 175px; 
+}
 
