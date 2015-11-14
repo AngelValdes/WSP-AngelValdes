@@ -34,4 +34,7 @@ color:#999;
 }
 .accordion:target{
 border-top:3px solid #daa520;
-}
+} 
+#accordion ul li > a:before { margin-left: 5px; content: '+ '   } 
+
+   
