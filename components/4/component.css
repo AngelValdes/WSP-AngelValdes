@@ -3,38 +3,66 @@
 ============================================================*/
 
 body {
-	background: #daa520;
-	font-family: Helvetica, sans-serif; font-size: 18px; line-height: 20px;
+    background: #222222;
+    font: 15px/20px helvetica, sans-serif;
+    color: #fafafa;
+}
+section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+dl {
+    box-shadow: 0 4px 20px #000000;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+dt {
+    color: white;
+    text-shadow: 0 1px #475b14;
+    border: 1px solid gray;
+    background: #4a4a4a;
+    /*background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 34%, rgba(102,102,102,1) 47%, rgba(71,71,71,1) 100%);*/
+     
+}
+dt:target{ 
+    color: #c5ee4d;
+}
+dd {
+    display: none;
 }
 
-#accordion{margin:100px auto;width:400px;}
-#accordion ul{list-style:none;margin:0;padding:0;}
-.accordion{display:none;}
-.accordion:target{display:block;}
-#accordion ul li a{text-decoration:none;display:block;padding:10px;}
-.accordion{padding:4px;}
-
-#accordion ul{
--webkit-box-shadow:0 4px 10px #BDBDBD;
-   -moz-box-shadow:0 4px 10px #BDBDBD;
-        box-shadow:0 4px 10px #BDBDBD;
-
--webkit-border-radius:5px;
-   -moz-border-radius:5px;
-        border-radius:5px;
+dt:target + dd {
+    display: block;
+    animation: fadeIn 1s;
+    padding: 1em 3em 3em 3em;
 }
-#accordion ul li a{
-background:#fff;
-border-bottom:1px solid #E0E0E0;
-color:#daa520;
+a {
+    display: block;
+    padding: 0.5em 0;
+    color: inherit;
+    text-decoration: none; 
 }
-.accordion{
-background:#fdfdfd;
-color:#999;
+#componentCode a::before {
+    content: "+";
+    display: inline-block;
+    position: relative;
+    left: -0.5em;
+    padding: 0.1em 0.15em;
+    background: #c5ee4d;
+    border-radius: 4px;
+    font-size: 2em;
+    font-weight: 800;
+    color: #82a526;
+    width: 1em;
+    height: 1em;
+    box-shadow: 0 0 .25em gold;    
 }
-.accordion:target{
-border-top:3px solid #daa520;
-} 
-#accordion ul li > a:before { margin-left: 5px; content: '+ '   } 
+#componentCode dt:target a::before {
+    content: "-";
+    padding: 0.02em 0 0 0.32em;
+}
 
-   
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
