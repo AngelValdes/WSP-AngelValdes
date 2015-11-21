@@ -1,8 +1,9 @@
+
 /* Component Stylesheet 
 ============================================================
 ============================================================*/
 body {
-	background: #daa520;
+	background: #000;
 	font-family: Helvetica, sans-serif; font-size: 18px; line-height: 20px;
 }
 
@@ -17,7 +18,9 @@ body {
 
 .slides input { display: none; }
 
-.slide-container { display: block; }
+.slide-container { 
+    display: block; 
+}
 
 .slide {
     top: 0;
@@ -28,6 +31,7 @@ body {
     position: absolute;
     transform: scale(0);
     transition: all .7s ease-in-out;
+    border: 10px solid #fff;
 }
 
 .slide img {
@@ -66,7 +70,7 @@ input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots {
 	width: 100%;
-	bottom: 9px;
+	bottom: 18px;
 	height: 11px;
 	display: block;
 	position: absolute;
@@ -81,7 +85,7 @@ input:checked + .slide-container .nav label { display: block; }
 	position: relative;
 	border-radius: 100%;
 	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: gray;
 }
 
 .nav-dots .nav-dot:hover {
